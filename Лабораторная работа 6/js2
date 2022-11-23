@@ -1,9 +1,9 @@
-import OpenModalEnter from "./modules/ModalEnter.js";
+import Moving from "./modules/js1.js";
 
 let headingsBtn = document.querySelectorAll(".headings_btn");
-let btnShowAllPublication = document.querySelector("#show_all_publication");
+let button = document.querySelector("#show_all_publication");
 
-btnShowAllPublication.addEventListener("click", () => {
+button.addEventListener("click", () => {
     let mainItems = document.querySelectorAll(".main_item");
 
     mainItems.forEach(it => {
@@ -40,9 +40,6 @@ headingsBtn.forEach(it => {
     it.addEventListener("click", () => { FilterMainItems(it.dataset.categories) });
 });
 
-
-// Burger menu
-
 let main = document.querySelector('.main');
 let menuBtn = document.querySelector('.menu-btn');
 let nav = document.querySelector('.nav');
@@ -70,4 +67,4 @@ menuBtn.addEventListener('click', () => {
     mainNavigationTitle.classList.toggle('burger_title_cl');
 });
 
-OpenModalEnter();
+Moving();
