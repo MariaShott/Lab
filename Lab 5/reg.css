@@ -1,0 +1,150 @@
+header {
+    background-color: #6244a1;
+    padding: 20px 60px 20px 60px;
+}
+
+.Logo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site_centr {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+
+.logotipe {
+    z-index: 5;
+}
+
+.prof {
+    display: flex;
+    align-items: center;
+}
+
+.links_entry_exit {
+    display: flex;
+    align-items: center;
+}
+
+.link_entry_exit {
+    margin-left: 20px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+
+.white {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 510;
+    font-family: Arial;
+}
+
+.blue{
+    color: #366AF3;
+    border-bottom: 1px solid #366AF3;
+}
+
+.footer {
+    margin: 60px 0;
+}
+
+.bellow_site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer.links_entry_exit:first-child {
+    margin-left: 0;
+    width: 100px;
+}
+
+.bottom_right {
+    color: #999999;
+}
+
+body {
+    background-color: #e7e7e7;
+}
+
+.registration {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 5%;
+    border-radius: 8px;
+    padding: 40px;
+    
+}
+.form-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
+.form-link {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.label {
+    color: #747474;
+    font-weight: 500;
+    margin-left: 11px;
+    
+}
+
+.reg_input_field {
+    margin-top: 20px;
+    color: #11224480;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.reg_input {
+    padding: 24px 0px 24px 24px;
+    margin-top: 4px;
+    border: 1px solid #11224480;
+    border-radius: 8px;
+    height: 70px;
+    width: 100%;
+}
+
+.comments {
+    display: flex;
+}
+
+.checkboxing {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.check{
+    margin-left: 10px;
+}
+
+.registration_button {
+    color: #FFF;
+    
+    font-size: 15px;
+    font-weight: 550;
+    margin-top: 40px;
+    font-family: Arial;
+    background-color: #6244a1;
+    border-radius: 8px;
+    width: 192px;
+    height: 60px;
+}
+
