@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Добавить запись</title>
+
+    <link rel="stylesheet" href="../CSS/post.css">
+    
+</head>
+<body>
+    
+    <header>
+        <div class="Logo">
+            <img class="logotipe" src="../Photos/Logo.png">
+                <nav class="prof">
+                     <img class="profile" src="../Photos/Profile.svg">
+                    
+                     <div class="links">
+
+                        <a class="link_sobaka" href="#">@UserAccountLogin</a>
+                        <button class="white">Новая запись</button>
+                        <a class="link white_link" href="#">Выйти</a>
+    
+                    </div>
+                </nav>
+        </div>
+    </header>
+
+    <div class="site_centr"> 
+        <h1>Добавить запись</h1>
+
+    <div class="all_content">
+
+        <label class = "labels">Заголовок</label>
+            <input class = "input" type = "text">
+
+            <label class = "labels">Текст</label>
+            <textarea class = "input text" type = "text"></textarea>
+
+            <label class = "labels">Выберите категорию</label>
+            <select class = "input">
+                <option>Без категории</option>
+                <option>Категория 1</option>
+                <option>Категория 2</option>
+                <option>Категория 3</option>
+            </select>
+
+            <div class = "button_file">
+
+                <input id="add_file" class="button_add_file" type="file" accept="image/*">
+                <label class = "button_add_file">
+                    <img src = "../Photos/add.svg">
+                    <label class = "text">Прикрепить файл изображения</label>
+                </label>
+
+                <img id = "img_file">
+            </div>
+
+            <button class = "last_button">Опубликовать</button>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="site_centr">
+        <div class="bellow_site">
+                <div class="prof">
+                    <a href="https://github.com/MariaShott" class="links_entry_exit blue">Об авторе</a>
+                    <a href="#" class="links_entry_exit blue">Технологии</a>
+            </div>
+    
+                <p class="bottom_right">© Blog, 2022</p>
+            
+            </div>
+            
+        </div>
+    
+    </footer>
+
+</body>
+</html>
