@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="../CSS/reg.css">
-
+    <link rel="stylesheet" href="../CSS/up_bellow.css">
+    <link rel="stylesheet" href="../CSS/delete.css">
     
     <title>Регистрация</title>
 </head> 
@@ -26,7 +27,7 @@
     </header>
 
     <form class="site_centr">
-        <h1>Регистрация</h1>
+        <h1 class="registr">Регистрация</h1>
 
         <div class = "registration">
 
@@ -46,16 +47,10 @@
                     <h4 class = "reg_input_field">Логин *</h4>
                     <input id = "login" class = "reg_input" type = "text">
                     <div class = "comm">
-                        <div class = "comments">
-                            <img id = "comment_log1">
                             <label id = "h4_comment_1">Только буквы, цифры и символы @.+-_</label>
-                        </div>
-                        <div class = "comments">
-                            <img id = "comment_log2">
-                            <label id = "h4_comment_log2">Не более 150 символов</label>
+                            <label id = "h4_comment_2">Не более 150 символов</label>
                         </div>
                     </div>
-                </div>
 
                 <div class = "form-link">
                     <h4 class = "reg_input_field">E-mail</h4>
@@ -66,36 +61,20 @@
                     <h4 class = "reg_input_field">Пароль *</h4>
                     <input id = "password" class = "reg_input" type = "password">
                     <div class = "comm">
-                        <div class = "comments">
-                            <img id = "comment_pass1">
                             <label id = "h4_comment_pass1">Минимум 8 символов</label>
-                        </div>
-                        <div class = "comments">
-                            <img id = "comment_pass2">
                             <label id = "h4_comment_pass2">Не может состоять только из цифр</label>
-                        </div>
-                        <div class = "comments">
-                            <img id = "comment_pass3">
                             <label id = "h4_comment_pass3">Не должен совпадать с логином</label>
                         </div>
-                        <div class = "comments">
-                            <img id = "comment_pass4">
-                            <label id = "h4_comment_pass4">Не должен быть в базе популярных паролей</label>
-                        </div>
                     </div>
-                </div>
 
                 <div class = "form-link">
                     <h4 class = "reg_input_field">Подтверждения пароля *</h4>
                     <input id = "password_ok" class = "reg_input" type = "text">
                     <div class = "comm">
-                        <div class = "comments">
-                            <img id = "comment_pass_ok_1">
                             <label id = "h4_comment_pass_ok_1">Пароли совпадают</label>
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div class = "checkboxing">
                 <input id = "checking" type = "checkbox">
@@ -107,7 +86,6 @@
         </div>
 
     </form>
-</body>
 
 <footer>
         <div class="site_centr">
@@ -116,13 +94,10 @@
                     <a href="https://github.com/MariaShott" class="links_entry_exit blue">Об авторе</a>
                     <a href="#" class="links_entry_exit blue">Технологии</a>
             </div>
-    
                 <p class="bottom_right">© Blog, 2022</p>
-            
             </div>
-            
         </div>
-    
     </footer>
-
+    <script src="../JS/reg.js"></script>
+</body>
 </html>
