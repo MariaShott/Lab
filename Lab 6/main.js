@@ -1,11 +1,8 @@
 let rubricki_a = document.querySelectorAll(".rubricki_a");
-
 const Filter_Items = categorie => {
     let Items = document.querySelectorAll(".themas_post[categorie]");
-
     Items.forEach(item => {
         let categoriesItem = item.dataset.categories.split(', ');
-
         let result = categoriesItem.find(it => {
             return categorie === it;
         });
