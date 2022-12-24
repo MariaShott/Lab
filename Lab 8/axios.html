@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="up_bellow.css">
+    <link rel="stylesheet" href="delete.css">
+    <link rel="stylesheet" href="vhod.css">
+    
+    <title>Лента публикаций</title>
+</head>
+
+<body>
+    <nav id="axios">
+        <header>
+        <div class="Logo">
+        <img class="logotipe" src="Logo.png">
+            <nav class="prof">
+                 <img class="profile" src="Profile.svg">
+                <div class="links_entry_exit"> 
+                    <a id="voity" class="link_entry_exit white" href="#">Войти</a>
+                    <a class="link_entry_exit white" href="#">Зарегистрироваться</a>
+                </div>
+            </nav>  </div>
+    </header>
+
+    <div class = "vhod">
+        <form class = "forma" method="POST">
+            <div class = "nadpis">
+                <h3 class = "nadpis_vhod">Вход</h3>
+                <img class = "close" src = "close.svg">
+            </div>
+
+            <div class = "login_and_pass">
+                <label class = "login">Логин</label>
+                <input class = "input" type = "text">
+            </div>
+
+            <div class = "login_and_pass">
+                <label class = "pass">Пароль</label>
+                <input class = "input" type = "password">
+            </div>
+
+            <div class = "button_vhod">
+                <button id="butt_vhod" class = "button" type = "submit">Войти</button>
+                <a class = "link">Забыли пароль?</a>
+            </div>
+        </form>
+    </div>
+    
+    <div class="site_centr"> 
+        <h1 class="title">Последние публикации</h1>
+
+    <div class="all_content">
+
+        <div class="content">
+    
+            <div class="posts">
+                <div v-for="it in posts" class ="post">
+                    <img v-bind:src="it.image" class="allaboutpost">
+                    <h2 class="post_head">{{it.title}}</h2>
+                    <p class="bellow_post">{{it.intro}}</p>
+                    <div class="thema_post">
+                    <div v-for="label in it.labels" class="post_thema" v-bind:data-categories="label">{{label}}</div>
+                    </div>
+                </div>
+            </div>
+            <button class="posts_loading">Загрузить ещё 6</button>
+                    </div>
+                <div class="rubricki">
+                <h3 class="rubricki_s">Рубрики</h3>
+                <button class="rubricki_a blue" data-categories="Education">Обучение</button>
+                <button class="rubricki_a blue" data-categories="Career">Career</button>
+                <button class="rubricki_a blue" data-categories="Figma">Figma</button>
+                <button class="rubricki_a blue" data-categories="Console">Консоль</button>
+                <button class="rubricki_a blue" data-categories="Git">Git</button>
+                <button class="rubricki_a blue" data-categories="News">Новости</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="site_centr">
+            <div class="bellow_site">                              <div class="prof">
+                    <a href="https://github.com/MariaShott" class="links_entry_exit blue">Об авторе</a>
+                    <a href="#" class="links_entry_exit blue">Технологии</a>
+                </div>
+                    <p class="bottom_right">© Blog, 2022</p>
+            </div>
+        </div>
+    </footer>
+</nav>
+        
+            <script src="vue.min.js"></script>
+            <script src="axios.min.js"></script>
+            <script src="axios.js"></script>
+            <script src="vhod.js"></script>
+</body>
+</html>
