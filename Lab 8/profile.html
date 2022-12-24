@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="up_bellow.css">
+    <link rel="stylesheet" href="delete.css">
+
+    <title>Страница автора</title>
+</head>
+<body>       
+    <div id="vue">
+    <header>
+    <div class="Logo">
+        <img class="logotipe" src="Logo.png">
+            <nav class="prof">
+            <img class="profile" src="Profile.svg">
+            <div class="links_entry_exit"> 
+                <a class="name" href="#">@UserAccountLogin</a>
+                <button class="button_near_the_name">Новая запись</button>
+                <a class="link_entry_exit white" href="#">Выйти</a>
+            </div>
+            </nav>  </div>
+    </header>
+<div class="site_centr">
+<div class="all_content">
+<div class="profile_site">
+<h1 class="profile_name">Имя пользователя</h1>
+<a class="user_name">@User</a>
+<p class ="user_followers_posts">Подписчиков: <span class="user_followers">10000</span></p> 
+<p>Подписан: <span class="user_followers">0</span></p>
+<p class="user_followers_posts">Записей: <span id="user_followers" class="user_followers">12</span></p>
+<h3>Выберите автора</h3> 
+<div><input type="text" v-model="author"></div>
+</div>
+
+<div class="content">
+    <div class="posts">
+    <div v-for="it in filterPosts" class ="themas_post">
+    <img v-bind:src="it.image" class="allaboutpost">
+    <h2 class="post_head">{{it.title}}</h2>
+    <p class="bellow_post">{{it.intro}}</p>
+    <div class="thema_post">
+        <div v-for="label in it.labels" class="post_thema" v-bind:categorie="label">{{label}}</div>
+    </div>
+    </div>
+    </div>
+
+<button class="posts_loading">Загрузить ещё 6</button>
+</div>
+</div>
+</div>
+
+<footer>
+    <div class="site_centr">
+        <div class="bellow_site">
+            <div class="prof">
+                <a href="https://github.com/MariaShott" class="links_entry_exit blue">Об авторе</a>
+                <a href="#" class="links_entry_exit blue">Технологии</a>
+            </div>
+            <p class="bottom_right">© Blog, 2022</p>
+        </div>    
+    </div>
+</footer>
+</div>
+
+<script src="vue.min.js"></script>
+<script src="data.js"></script>
+<script src="vue.js"></script>
+<script src="profile.js"></script>
+</body>
+</html>
