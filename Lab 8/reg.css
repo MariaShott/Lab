@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+.registr {
+    margin-top: 5%;
+    font-weight: 800;
+    font-family: Arial;
+}
+
+.registration {
+    margin-top: 5%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.reg_input_field {
+    margin-top: 20px;
+    color: rgba(17, 34, 68, 0.5);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.reg_input {
+    padding: 24px 0px 24px 24px;
+    margin-top: 4px;
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 8px;
+    width: 100%;
+    height: 70px;
+}
+
+.comm {
+    margin-top: 8px;
+    padding-left: 27px;
+}
+
+.form-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
+.form-link {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    margin-left: 11px;
+    font-weight: 500;
+    color: #747474;
+}
+
+.checkboxing {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.check {
+    margin-left: 10px;
+}
+
+.reg_button {
+    margin-top: 40px;
+    font-size: 15px;
+    color: #FFF;
+    font-weight: 550;
+    font-family: Arial;
+    background-color: #6244a1;
+    border-radius: 8px;
+    width: 192px;
+    height: 60px;
+}
+
+button:disabled, button[disabled] {
+    background-color: #cccccc;
+    color: #fff;
+}
+
+.yes {
+    color: #00FF00;
+    padding-left: 20px;
+    background: left 0% no-repeat url("../Photos/Yes.svg");
+}
+.no {
+    color: #FF0000;
+    padding-left: 20px;
+    background: left 0% no-repeat url("../Photos/No.svg");
+}
