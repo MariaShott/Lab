@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/up_bellow.css">
+    <link rel="stylesheet" href="../CSS/delete.css">
+    <link rel="stylesheet" href="../CSS/vhod.css">
+    
+    <title>Лента публикаций</title>
+</head>
+
+<body>
+    <header>
+        <div class="Logo">
+        <img class="logotipe" src="Logo.png">
+            <nav class="prof">
+                 <img class="profile" src="Profile.svg">
+                <div class="links_entry_exit"> 
+                    <a id="voity" class="link_entry_exit white" href="#">Войти</a>
+                    <a class="link_entry_exit white" href="#">Зарегистрироваться</a>
+                </div>
+            </nav>  </div>
+    </header>
+
+    <div class = "vhod">
+        <form class = "forma" method="POST">
+            <div class = "nadpis">
+                <h3 class = "nadpis_vhod">Вход</h3>
+                <img class = "close" src = "close.svg">
+            </div>
+
+            <div class = "login_and_pass">
+                <label class = "login">Логин</label>
+                <input class = "input" type = "text">
+            </div>
+
+            <div class = "login_and_pass">
+                <label class = "pass">Пароль</label>
+                <input class = "input" type = "password">
+            </div>
+
+            <div class = "button_vhod">
+                <button id="butt_vhod" class = "button" type = "submit">Войти</button>
+                <a class = "link">Забыли пароль?</a>
+            </div>
+        </form>
+    </div>
+    
+    <div class="site_centr"> 
+        <h1 class="title">Последние публикации</h1>
+
+    <div class="all_content">
+
+        <div class="content">
+    
+            <div class="posts">
+        
+                <div class="themas_post" categorie="Git, Консоль">
+                        <img class="allaboutpost" src="1.png" alt="post_about_work_in_Git">
+                        <h2 class="post_head">Работа с Git в Visual Studio Code</h2> 
+                        <label class="bellow_post">Один из способов работать с Гитом.</label>
+                    
+                    <div class="thema_post">
+                        <label class="post_thema">Git</label>
+                        <label class="post_thema">Консоль</label>
+                    </div>
+                </div>
+
+            <div class="themas_post" categorie="Figma">
+                    <img class="allaboutpost" src="2.png" alt="post_about_Adobe">
+                    <h2 class="post_head">Adobe покупают Фигму. Всё пропало?</h2> 
+                    <label class="bellow_post">Не факт, но есть разные мнения.</label>
+            
+                <div class="thema_post">
+                    <label class="post_thema">Figma</label>
+                </div>
+
+            </div>
+
+            <div class="themas_post" categorie="Обучение, Карьера">
+                <img class="allaboutpost" src="3.png" alt="post_about_programming">
+                <h2 class="post_head">Все научились программировать. А дальше-то что?</h2> 
+                <label class="bellow_post">Ученье — свет.</label>
+        
+            <div class="thema_post">
+                <label class="post_thema">Обучение</label>
+                <label class="post_thema">Карьера</label>
+            </div>
+
+        </div>
+
+        <div class="themas_post" categorie="Обучение">
+            <img class="allaboutpost" src="4.png" alt="post_about_education">
+            <h2 class="post_head">Мне тяжело учиться, кто поможет?</h2> 
+            <label class="bellow_post">Попали в патовую ситуацию? Тогда кликайте на статью.</label>
+
+        <div class="thema_post">
+            <label class="post_thema">Обучение</label>
+        </div>
+
+    </div>
+
+        <div class="themas_post" categorie="Обучение, Карьера">
+            <img class="allaboutpost" src="5.png" alt="post_about_Adobe">
+            <h2 class="post_head">Ключевые навыки фронтендеров в 2022</h2> 
+            <label class="bellow_post">Ежегодное исследование рынка от HTML Academy.</label>
+
+        <div class="thema_post">
+            <label class="post_thema">Обучение</label>
+            <label class="post_thema">Карьера</label>
+        </div>
+
+        </div>
+
+        <div class="themas_post" categorie="Новости">
+            <img class="allaboutpost" src="6.png" alt="post_about_Adobe">
+            <h2 class="post_head">Фронтенд-новости</h2> 
+            <label class="bellow_post">WAI-ARIA, новинки HTML-форм и 12 ошибок любого джаваскриптера.</label>
+
+            <div class="thema_post">
+                <label class="post_thema">Новости</label>
+            </div>
+        </div>
+
+    </div>
+
+<button class="posts_loading">Загрузить ещё 6</button>
+        </div>
+    <div class="rubricki">
+        <h3 class="rubricki_s">Рубрики</h3>
+        <button class="rubricki_a blue" data-categories="Education">Обучение</button>
+        <button class="rubricki_a blue" data-categories="Career">Career</button>
+        <button class="rubricki_a blue" data-categories="Figma">Figma</button>
+        <button class="rubricki_a blue" data-categories="Console">Консоль</button>
+        <button class="rubricki_a blue" data-categories="Git">Git</button>
+        <button class="rubricki_a blue" data-categories="News">Новости</button>
+    </div>
+</div>
+</div>
+
+<footer>
+        <div class="site_centr">
+            <div class="bellow_site">
+                <div class="prof">
+                    <a href="https://github.com/MariaShott" class="links_entry_exit blue">Об авторе</a>
+                    <a href="#" class="links_entry_exit blue">Технологии</a>
+            </div>
+    
+                <p class="bottom_right">© Blog, 2022</p>
+            </div>
+        </div>
+    </footer>
+        <script src="vhod.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
