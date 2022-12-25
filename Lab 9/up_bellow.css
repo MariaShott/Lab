@@ -1,0 +1,87 @@
+header {
+    background-color: #6244a1;
+    padding: 20px 60px 20px 60px;
+}
+
+.Logo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logotipe {
+    z-index: 5;
+}
+
+.prof {
+    display: flex;
+    align-items: center;
+}
+
+.links_entry_exit {
+    display: flex;
+    align-items: center;
+}
+
+.site_centr {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.link_entry_exit {
+    margin-left: 20px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+
+.white {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 510;
+    font-family: Arial;
+}
+
+.blue {
+    color: #366AF3;
+    border-bottom: 1px solid #366AF3;
+} 
+
+footer {
+    margin: 60px 0;
+}
+
+.bellow_site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom_right {
+    color: #999999;
+}
+
+.name {
+    margin-left: 20px;
+    padding-bottom: 3px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    font-family: Arial;
+}
+
+.button_near_the_name {
+    font-size: 16px;
+    color: #6244a1;
+    font-weight: 550;
+    font-family: Arial;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-left: 20px;
+    width: 145px;
+    height: 40px;
+}
